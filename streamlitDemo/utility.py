@@ -14,7 +14,7 @@ import time
 # VIDEO PATHS
 DEMO_VIDEO_1_PATH = './assets/video/video1.mp4'
 DEMO_VIDEO_2_PATH  = './assets/video/video2.mp4'
-DEMO_VIDEO_3_PATH  = './assets/video/video3.mp4'
+DEMO_VIDEO_3_PATH  = '/assets/video/video3.mp4'
 DEMO_VIDEO_4_PATH  = './assets/video/video4.mp4'
 DEMO_VIDEO_5_PATH  = './assets/video/video5.mp4'
 
