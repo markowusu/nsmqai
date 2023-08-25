@@ -251,7 +251,7 @@ def apiSetupPageOperation(inputType):
 
 # AUTOPLAY AUDIO
 def autoplay_audio(audioFile):
-    with open(audioFile, "rb") as f:
+    with open(os.path.join(audioFile), "rb") as f:
         data = f.read()
         b64 = base64.b64encode(data).decode()
         md = f"""
@@ -266,7 +266,7 @@ def autoplay_audio(audioFile):
 
 # AUTOPLAY VIDEO
 def autoplay_video(video_file_path):
-    with open(video_file_path, "rb") as f:
+    with open(os.path.join(video_file_path), "rb") as f:
         data = f.read()
         b64 = base64.b64encode(data).decode()
         md = f"""
