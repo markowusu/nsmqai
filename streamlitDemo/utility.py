@@ -12,18 +12,18 @@ import uuid
 import time
 
 # VIDEO PATHS
-DEMO_VIDEO_1_PATH = '../assets/video/video1.mp4'
-DEMO_VIDEO_2_PATH  = '../assets/video/video2.mp4'
-DEMO_VIDEO_3_PATH  = '../assets/video/video3.mp4'
-DEMO_VIDEO_4_PATH  = '../assets/video/video4.mp4'
-DEMO_VIDEO_5_PATH  = '../assets/video/video5.mp4'
+DEMO_VIDEO_1_PATH = '/assets/video/video1.mp4'
+DEMO_VIDEO_2_PATH  = '/assets/video/video2.mp4'
+DEMO_VIDEO_3_PATH  = '/assets/video/video3.mp4'
+DEMO_VIDEO_4_PATH  = '/assets/video/video4.mp4'
+DEMO_VIDEO_5_PATH  = '/assets/video/video5.mp4'
 
 # AUDIO PATHS
-DEMO_AUDIO_1_PATH  = '../assets/audio/audio_video1.mp3'
-DEMO_AUDIO_2_PATH  = '../assets/audio/audio_video2.mp3'
-DEMO_AUDIO_3_PATH  = '../assets/audio/audio_video3.mp3'
-DEMO_AUDIO_4_PATH  = '../assets/audio/audio_video4.mp3'
-DEMO_AUDIO_5_PATH  = '../assets/audio/audio_video5.mp3'
+DEMO_AUDIO_1_PATH  = '/assets/audio/audio_video1.mp3'
+DEMO_AUDIO_2_PATH  = '/assets/audio/audio_video2.mp3'
+DEMO_AUDIO_3_PATH  = '/assets/audio/audio_video3.mp3'
+DEMO_AUDIO_4_PATH  = '/assets/audio/audio_video4.mp3'
+DEMO_AUDIO_5_PATH  = '/assets/audio/audio_video5.mp3'
 
 # API ENDPOINTS
 STT_API_KEY = 'STT_API'
