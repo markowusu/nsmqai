@@ -34,6 +34,13 @@ path_to_find = os.listdir()
 st.title(path_to_find)
 print("========2")
 
+print("=======3")
+file_path = cwd+"streamlitDemo"+DEMO_AUDIO_3_PATH
+
+with open(file_path):
+    print("Finally")
+
+
 # print("======1")
 # file_stats = os.stat(dir_path)      
 # print(file_stats)
