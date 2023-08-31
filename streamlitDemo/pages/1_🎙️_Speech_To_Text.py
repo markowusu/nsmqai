@@ -12,8 +12,8 @@ st.write(
     """
 )
 
-with open(DEMO_AUDIO_3_PATH, "rb") as audio_file:
-    print("Demo Audio 3")
+# with open(DEMO_AUDIO_3_PATH, "rb") as audio_file:
+#     print("Demo Audio 3")
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 print(dir_path)
