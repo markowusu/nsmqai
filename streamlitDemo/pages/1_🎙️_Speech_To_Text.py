@@ -35,7 +35,7 @@ st.title(path_to_find)
 print("========2")
 
 print("=======3")
-file_path = cwd+"streamlitDemo"+DEMO_AUDIO_3_PATH
+file_path = cwd+"/streamlitDemo"+DEMO_AUDIO_3_PATH
 
 with open(file_path):
     print("Finally")
