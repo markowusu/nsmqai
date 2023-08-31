@@ -252,7 +252,7 @@ def apiSetupPageOperation(inputType):
 
 # AUTOPLAY AUDIO
 def autoplay_audio(audioFile):
-    with open(CURRENT_DIR+"/streamlitDemo"+audioFile), "rb") as f:
+    with open(CURRENT_DIR+"/streamlitDemo"+audioFile, "rb") as f:
         data = f.read()
         b64 = base64.b64encode(data).decode()
         md = f"""
