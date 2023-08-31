@@ -26,19 +26,19 @@ st.write(
 # print(f'File Size in MegaBytes is {file_stats.st_size / (1024 * 1024)}')
 # print("======")
 
-print("========2")
-cwd = os.getcwd()
-print(cwd)
+# print("========2")
+# cwd = os.getcwd()
+# print(cwd)
 
-path_to_find = os.listdir()
-st.title(path_to_find)
-print("========2")
+# path_to_find = os.listdir()
+# st.title(path_to_find)
+# print("========2")
 
-print("=======3")
-file_path = cwd+"/streamlitDemo"+DEMO_AUDIO_3_PATH
+# print("=======3")
+# file_path = cwd+"/streamlitDemo"+DEMO_AUDIO_3_PATH
 
-with open(file_path):
-    print("Finally")
+# with open(file_path):
+#     print("Finally")
 
 
 # print("======1")
