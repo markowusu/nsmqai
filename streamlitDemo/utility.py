@@ -11,6 +11,7 @@ import json
 import uuid
 import time
 
+CURRENT_DIR = os.getcwd()
 # VIDEO PATHS
 DEMO_VIDEO_1_PATH = '/assets/video/video1.mp4'
 DEMO_VIDEO_2_PATH  = '/assets/video/video2.mp4'
@@ -59,7 +60,7 @@ def get_stt_transcript(audioFile):
     # only make the API call if a valid url is present
     if STT_API != NO_API_SET_FLAG:
         STT_TRANSCRIPT_API = STT_API.rstrip('/') + '/get-transcript'
-        with open(audioFile, "rb") as audio_file:
+        with open(CURRENT_DIR+"/streamlitDemo"+audioFile, "rb") as audio_file:
             audio_bytes = audio_file.read()
             bytes_data = base64.b64encode(audio_bytes).decode()
 
@@ -251,7 +252,7 @@ def apiSetupPageOperation(inputType):
 
 # AUTOPLAY AUDIO
 def autoplay_audio(audioFile):
-    with open(os.path.join(audioFile), "rb") as f:
+    with open(CURRENT_DIR+"/streamlitDemo"+audioFile), "rb") as f:
         data = f.read()
         b64 = base64.b64encode(data).decode()
         md = f"""
@@ -266,7 +267,7 @@ def autoplay_audio(audioFile):
 
 # AUTOPLAY VIDEO
 def autoplay_video(video_file_path):
-    with open(os.path.join(video_file_path), "rb") as f:
+    with open(CURRENT_DIR+"/streamlitDemo"+audioFile, "rb") as f:
         data = f.read()
         b64 = base64.b64encode(data).decode()
         md = f"""
