@@ -25,6 +25,14 @@ print(f'File Size in Bytes is {file_stats.st_size}')
 print(f'File Size in MegaBytes is {file_stats.st_size / (1024 * 1024)}')
 print("======")
 
+print("========2")
+cwd = os.getcwd()
+print(cwd)
+
+path_to_find = os.listdir()
+st.title(path_to_find)
+print("========2")
+
 print("======1")
 file_stats = os.stat(dir_path)      
 print(file_stats)
@@ -34,9 +42,6 @@ print("======1")
 
 
 
-
-      
-with open(
 if get_stt_api() == NO_API_SET_FLAG:
     st.warning('Please setup the STT API endpoint on the API Setup page', icon="⚠️")
 
