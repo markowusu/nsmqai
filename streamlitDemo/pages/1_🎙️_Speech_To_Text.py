@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 from utility import DEMO_AUDIO_3_PATH, NO_API_SET_FLAG, get_stt_api, realtime_audio_file_STT, realtime_audio_recording_STT, autoplay_audio
 
 st.set_page_config(page_title="Speech To Text Demo", page_icon="🎙️", layout="wide")
@@ -11,6 +12,31 @@ st.write(
     """
 )
 
+with open(DEMO_AUDIO_3_PATH, "rb") as audio_file:
+    print("Demo Audio 3")
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+print(dir_path)
+
+print("======")
+file_stats = os.stat(DEMO_AUDIO_3_PATH)      
+print(file_stats)
+print(f'File Size in Bytes is {file_stats.st_size}')
+print(f'File Size in MegaBytes is {file_stats.st_size / (1024 * 1024)}')
+print("======")
+
+print("======1")
+file_stats = os.stat(dir_path)      
+print(file_stats)
+print(f'File Size in Bytes is {file_stats.st_size}')
+print(f'File Size in MegaBytes is {file_stats.st_size / (1024 * 1024)}')
+print("======1")
+
+
+
+
+      
+with open(
 if get_stt_api() == NO_API_SET_FLAG:
     st.warning('Please setup the STT API endpoint on the API Setup page', icon="⚠️")
 
