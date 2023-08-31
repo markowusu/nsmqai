@@ -99,7 +99,7 @@ def get_tts_audio(text, voice):
         outputFileName = "tts_output.wav"
 
         if response.status_code == 200:
-            with open(outputFileName, "wb+") as file:
+            with open(CURRENT_DIR+"/streamlitDemo"+outputFileName, "wb+") as file:
                 file.write(response.content)
     
     return outputFileName
